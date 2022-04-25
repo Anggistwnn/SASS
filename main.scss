@@ -1,0 +1,60 @@
+// .main{
+//     background-color: violet;
+// }
+
+// .main-heading{
+//     font-size: 2em;
+
+// }
+
+// .main-paragraph{
+//     font-size: 1.9em;
+// }
+
+// menerapkan daftar selektor dengan mudah 
+
+// .main, footer{
+//     h1, p{
+//       letter-spacing: 21px;
+//     }
+//   }
+
+// && 
+// parent selector
+
+// .main{
+//     .container &{
+//         background-color: salmon;
+//     }
+//     .main-heading{
+//         font-size: 2em ;
+//     }
+//     &:hover{
+//         background-color: aqua;
+//     }
+
+// }
+
+// melakukan generate menggunakan &
+
+// .main{
+    // #{&} atau bisa menggunakan seperti in
+//    & &-heading{
+//         font-size: 5em;
+//     }
+//    & &-paragraph{
+//         font-size: 5em;
+//     }
+// }
+
+
+.footer {
+    // #{&} atau bisa menggunakan seperti in
+    & &-heading{
+        background-color :blue;
+    }
+
+    & &-paragraph{
+        background-color: lightcoral;
+    }
+}
