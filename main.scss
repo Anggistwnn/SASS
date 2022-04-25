@@ -1,3 +1,5 @@
+// SASS NESTING SEBUAH CODE YANG BERADA DALAM 1 VARIABLE LOKAL { }
+
 // .main{
 //     background-color: violet;
 // }
@@ -48,13 +50,79 @@
 // }
 
 
-.footer {
-    // #{&} atau bisa menggunakan seperti in
-    & &-heading{
-        background-color :blue;
-    }
+// .footer {
+//     // #{&} atau bisa menggunakan seperti in
+//     & &-heading{
+//         background-color :blue;
+//     }
 
-    & &-paragraph{
-        background-color: lightcoral;
-    }
+//     & &-paragraph{
+//         background-color: lightcoral;
+//     }
+// }
+
+// AKHIR LATIHAN 1
+ 
+// AWAL LATIHAN 2
+
+// CSS VARIABLES
+// cara agar semua element dapat mengakses variables nya dapat menggunakan code dibawah ini
+
+// :root{
+//     --primary-color: #ddd;
+//     --secondary-color: violet;
+//     --text-color: salmon ;
+// }
+
+// body{
+//     background-color: var(--primary-color);
+// }
+
+// h1{
+//     color: var(--secondary-color);
+// }
+
+// p{
+//     color: var(--text-color);
+// }
+
+// sass variables
+// $text-color: salmon;
+// $secondary-color: violet;
+// dapat membuah nama variable yang sama hanya berbeda penempatan saja global dengan lokal
+// $primary-color: lightgreen;
+
+
+// body{
+    // $primary-color: #ddd !global;
+//     $primary-color: #ddd;
+//     background-color:$primary-color;
+// }
+
+// h1{
+//         color: $primary-color;
+// }
+
+// p{
+//     color: $secondary-color;
+// }
+
+// MAP memapping antara key dan value
+
+// $alert-danger:red;
+// $alert-success:green;
+// $alert-warning:yellow;
+
+$alert:(
+    'danger':red,
+    'warning':yellow,
+    'success':green,
+);
+
+h1{
+    color: map-get($alert ,'success');
+}
+
+p{
+    background-color: map-get($alert , 'warning');
 }
