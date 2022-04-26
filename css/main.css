@@ -1,8 +1,11 @@
-h1 {
-  color: lightgreen;
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-p {
-  background-color: yellow;
+.header ul li,
+.footer ul li {
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */
