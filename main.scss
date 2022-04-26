@@ -113,23 +113,23 @@
 // $alert-success:green;
 // $alert-warning:yellow;
 
-// $alert:(
-//     'danger':red,
-//     'warning':yellow,
-//     'success':green,
-// );
+$alert:(
+    'danger':red,
+    'warning':yellow,
+    'success':green,
+);
 
-// h1{
-//     color: map-get($alert ,'success');
-// }
+h1{
+    color: map-get($alert ,'success');
+}
 
-// p{
-//     background-color: map-get($alert , 'warning');
-// }
+p{
+    background-color: map-get($alert , 'warning');
+}
 
-// AKHIR LATIHAN 2
+// AKHIR PRACTICE 2
 
-// AWAL LATIHAN 3
+// AWAL PRACTICE 3
 
 // MIXIN (Kumpulan style yang dapat kita gunakan berulang - ulang atau sebuah function dalam sass
 
