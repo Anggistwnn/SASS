@@ -133,15 +133,54 @@
 
 // MIXIN (Kumpulan style yang dapat kita gunakan berulang - ulang atau sebuah function dalam sass)
 
-ul li{
+// Simple mixin
+
+@mixin inline-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    li{
+        display: inline-block;
+
+    }
 }
 
-.header ul li,
-.footer ul li {
-    display: inline-block;
+.header ul{
+    @include    inline-list();
+    li{
+        background-color: black;
+        padding: 0.7em;
+        a{color: white;
+        }
+    
+    }
+
 }
 
+.footer ul {
+    @include inline-list();
+    li{
+        padding: 0.4em;
+        background-color:goldenrod;
+      
+        a{
+        color: white;
+        text-decoration: none;
+        }
+    }
 
+}
+
+// argumernts pada mixin
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: #eaea;
+    .box{
+        width: 60px ;
+        height: 60px;
+        background-color: lightcoral;
+        text-align: center;
+        line-height: 60px;
+    }
+}
