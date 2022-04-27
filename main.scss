@@ -171,16 +171,17 @@
 
 }
 // argumernts pada mixin
-@mixin flex-box {
+@mixin flex-box($direction: row, $space: center) {
     display: flex;
-    justify-content: center;
+    justify-content: $space;
     align-items: center;
+    flex-direction: $direction;
 
 }
 
 .container{
-    @include flex-box();
-    
+    @include flex-box(column-reverse, space-evenly
+    );
     width: 600px;
     height: 400px;
     background-color: #eaea;
