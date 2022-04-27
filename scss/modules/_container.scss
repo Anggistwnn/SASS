@@ -1,5 +1,6 @@
+@use 'mixin';
 .container{
-    @include flex-box(column-reverse, space-evenly
+    @include mixin.flex-box(column-reverse, space-evenly
     );
     width: 600px;
     height: 400px;
