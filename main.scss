@@ -135,61 +135,15 @@
 
 // Simple mixin
 
-@mixin inline-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li{
-        display: inline-block;
+@import 'mixin';
+@import 'header';
+@import 'container';
+@import 'footer';
 
-    }
-}
 
-.header ul{
-    @include    inline-list();
-    li{
-        background-color: black;
-        padding: 0.7em;
-        a{color: white;
-        }
-    
-    }
 
-}
 
-.footer ul {
-    @include inline-list();
-    li{
-        padding: 0.4em;
-        background-color:goldenrod;
-      
-        a{
-        color: white;
-        text-decoration: none;
-        }
-    }
+// Akhir Latihan  3
 
-}
-// argumernts pada mixin
-@mixin flex-box($direction: row, $space: center) {
-    display: flex;
-    justify-content: $space;
-    align-items: center;
-    flex-direction: $direction;
+// awal latihan 4
 
-}
-
-.container{
-    @include flex-box(column-reverse, space-evenly
-    );
-    width: 600px;
-    height: 400px;
-    background-color: #eaea;
-    .box{
-        width: 60px ;
-        height: 60px;
-        background-color: lightcoral;
-        text-align: center;
-        line-height: 60px;
-    }
-}
