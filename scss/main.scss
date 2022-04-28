@@ -147,7 +147,9 @@
 // // Akhir Latihan  3
 
 // // awal latihan 4
-
+body{
+    min-height: 1000px;
+}
 @mixin profile-picture($size, $circle: false) {
     width: $size;
     height: $size;
@@ -186,4 +188,42 @@ $dark-text:#ddd;
 
 .nav{
     @include color-mode($light-mode: false);
+}
+
+// else if
+@mixin triangle($size, $color, $direction) {
+    width: 0;
+    height: 0;
+    background-color:transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+    @if direction == up {
+        border-bottom-color:$color;
+    } @else if $direction == right {
+        border-left-color:$color;
+    } @else if $direction == down {
+        border-top-color:$color;
+    } @else {
+        border-right-color: $color;
+    }
+}
+.right{
+    @include triangle(2em, black ,right )
+}
+
+// for
+.gradient{
+    $color: orange;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    $i: 1;
+    @while $i < 11 {
+        li:nth-child(#{$i}){
+            padding: 4px;
+            background-color: lighten($color, $i * 2%);
+        }
+        $i : $i + 1;
+    }
 }
