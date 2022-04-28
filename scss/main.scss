@@ -148,6 +148,21 @@
 
 // // awal latihan 4
 
-@mixin profile-picture {
-    
+@mixin profile-picture($size, $circle: false) {
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.3);
+
+
+    @if $circle{
+        border-radius: 50%;
+    }
+}
+
+.square-profile{
+    @include profile-picture(200px, $circle: false );
+}
+.circle-profile{
+    @include profile-picture(80px, $circle: true);
 }
