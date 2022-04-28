@@ -166,3 +166,24 @@
 .circle-profile{
     @include profile-picture(80px, $circle: true);
 }
+
+// else
+$light-bg: #eaeaea ;
+$light-text:#333;
+$dark-bg:#999;
+$dark-text:#ddd;
+
+@mixin color-mode($light-mode:true) { 
+    @if $light-mode {
+          background-color: $light-bg;
+          color: $light-text;
+    } @else {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+
+}
+
+.nav{
+    @include color-mode($light-mode: false);
+}
