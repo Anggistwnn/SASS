@@ -245,3 +245,20 @@ $dark-text:#ddd;
 //     }
 // } 
 // }
+
+
+// each
+$social-color:(
+    youtube:red ,
+    instagram: violet,
+    twitter: #1da1f2,
+);
+
+.socials{
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    @each $var in list {
+        
+    }
+}
