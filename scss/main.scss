@@ -212,7 +212,10 @@ $dark-text:#ddd;
     @include triangle(2em, black ,right )
 }
 
-// for
+
+
+
+// while
 .gradient{
     $color: orange;
     list-style: none;
@@ -227,3 +230,18 @@ $dark-text:#ddd;
         $i : $i + 1;
     }
 }
+
+
+// for
+// $color: blueviolet;
+// .gradient{
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     @for $i from 1 to 11 {
+//         li:nth-child(#{$i}){
+//             padding: 4px;
+//             background-color: lighten($color, $i * 3%);
+//     }
+// } 
+// }
