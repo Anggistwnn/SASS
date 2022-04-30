@@ -95,4 +95,16 @@ body {
   font-family: arial;
   font-weight: bold;
 }
+
+.socials .youtube {
+  color: red;
+}
+
+.socials .instagram {
+  color: violet;
+}
+
+.socials .twitter {
+  color: #1da1f2;
+}
 /*# sourceMappingURL=main.css.map */

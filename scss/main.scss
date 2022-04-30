@@ -258,7 +258,9 @@ $social-color:(
     font-size: 2em;
     font-family: arial;
     font-weight: bold;
-    @each $var in list {
-        
-    }
+    @each $social, $color in $social-color {
+        .#{$social}{
+            color: $color;
+        }
+    } 
 }
