@@ -280,17 +280,26 @@ h1{
     // Built-in Modulse: color
     // adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0)
 
- h1 {
-    //  color: adjust-color($color: $warna-dasar, $red: null, $green: null, $blue: 78%, $hue: null, $saturation: null, $lightness: null, $alpha: null);
- };
+//  h1 {
+//      color: adjust-color($color: $warna-dasar, $red: null, $green: null, $blue: 78%, $hue: null, $saturation: null, $lightness: null, $alpha: null);
+//  };
 
 // hue in while color
-  h1{
+//   h1{
 //       color: adjust-hue($warna-dasar, -80deg);
-  }
+//   }
 
 // complement($color) langsung menentuka warna yang berlawanan
-h1{
-    color: complement($color: ($warna-dasar));
-}
+// h1{
+//     color: complement($color: ($warna-dasar));
+// }
 
+// darken
+// h1{
+//     color: darken($color: $warna-dasar, 30%)
+// }
+
+// lighten 
+h1{
+    color: lighten($warna-dasar, 10%);
+}
