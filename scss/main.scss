@@ -289,7 +289,7 @@ h1{
 //       color: adjust-hue($warna-dasar, -80deg);
   }
 
-// complement($color)
+// complement($color) langsung menentuka warna yang berlawanan
 h1{
     color: complement($color: ($warna-dasar));
 }
