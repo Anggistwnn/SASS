@@ -275,8 +275,22 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     text-align: center;
+}
 
     // Built-in Modulse: color
-    adjust-color($color, $red:null )
-      
+    // adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0)
+
+ h1 {
+    //  color: adjust-color($color: $warna-dasar, $red: null, $green: null, $blue: 78%, $hue: null, $saturation: null, $lightness: null, $alpha: null);
+ };
+
+// hue in while color
+  h1{
+//       color: adjust-hue($warna-dasar, -80deg);
+  }
+
+// complement($color)
+h1{
+    color: complement($color: ($warna-dasar));
 }
+
