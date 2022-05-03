@@ -318,6 +318,12 @@ h1{
 
 // greyscale ,langsung membuat kadar warna dari objek menjadi memudar 100%
 
-h1{
-    color: grayscale($warna-dasar);
-}
+// h1{
+//     color: grayscale($warna-dasar);
+// }
+
+// mix($color1, color3);
+
+ h1{
+     color: mix($warna-dasar, yellow, 30%);
+ }
