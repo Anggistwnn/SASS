@@ -300,6 +300,20 @@ h1{
 // }
 
 // lighten 
-h1{
-    color: lighten($warna-dasar, 14%);
-}
+// h1{
+//     color: lighten($warna-dasar, 14%);
+// }
+
+// saturate menambahkan kemurnian dari warna
+// h1{
+//     color: saturate
+//        ($warna-dasar, 10%); 
+// }
+
+// desaturate mengurangi warna
+
+// h1{
+//     color: desaturate($warna-dasar, 70%)
+// }
+
+
