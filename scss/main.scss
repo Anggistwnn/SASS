@@ -316,4 +316,8 @@ h1{
 //     color: desaturate($warna-dasar, 70%)
 // }
 
+// greyscale ,langsung membuat kadar warna dari objek menjadi memudar 100%
 
+h1{
+    color: grayscale($warna-dasar);
+}
