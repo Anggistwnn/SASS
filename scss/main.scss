@@ -324,6 +324,17 @@ h1{
 
 // mix($color1, color3);
 
+//  h1{
+//      color: mix($warna-dasar, yellow, 60%);
+//  }
+
+// fadein, membuat yang solid menjadi transparant
  h1{
-     color: mix($warna-dasar, yellow, 30%);
+     color: fade-in(rgba(250, 128, 144, 0.2), 0.5);
  }
+
+ h1{
+     color: fade-out($warna-dasar, 0.4);
+ }
+ 
+
